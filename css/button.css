@@ -1,0 +1,171 @@
+.main-btn {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: SupplyLight;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+}
+
+.main-btn a {
+  color: #fff;
+}
+
+.main-btn a:hover {
+  color: #1b1b1b;
+}
+
+.main-btn:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #1d1d1d;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-btn svg {
+  transform: translateX(0);
+  fill: #fff;
+  stroke: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-btn:hover svg {
+  transform: translateX(4px);
+  fill: #1d1d1d;
+  stroke: #1d1d1d;
+  transition: all 0.4s ease-in-out;
+}
+
+.social a {
+  background: var(--main-hard-grey);
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.social a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.social a:hover {
+  background: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.social #social-color {
+  fill: #0a0a0a;
+  transition: all 0.4s ease-in-out;
+}
+
+.social a:hover #social-color {
+  fill: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.projectPrev,
+.projectNext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.projectPrev:hover,
+.projectNext:hover {
+  background: #8a8a8a;
+  transition: all 0.4s ease-in-out;
+}
+
+.projectPrev:hover #counterBtn,
+.projectNext:hover #counterBtn {
+  fill: #1d1d1d;
+  stroke: #1d1d1d;
+  transition: all 0.4s ease-in-out;
+}
+
+#counterBtn {
+  fill: #8a8a8a;
+  transition: all 0.4s ease-in-out;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-button:hover span {
+  color: #8a8a8a;
+  transform: translateX(4px);
+  transition: all 0.4s ease-in-out;
+}
+
+#bakcBtn {
+  stroke: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.back-button:hover #bakcBtn {
+  stroke: #8a8a8a;
+  transition: all 0.4s ease-in-out;
+}
+
+.back span {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-family: SupplyRegular;
+  transform: translateX(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.burger-btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: grid;
+  align-items: center;
+  gap: 6px;
+}
+
+.burger-btn:hover {
+  display: grid;
+  gap: 8px;
+}
+
+.burger-btn .burg {
+  background-color: #fff;
+  height: 1px;
+  width: 34px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 500px) {
+  .main_bottom {
+    border-top: 1px solid #1d1d1d;
+    position: fixed;
+    bottom: 1em;
+    padding: 20px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 20px;
+    background-color: #0a0a0a;
+  }
+}

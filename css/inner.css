@@ -1,0 +1,23 @@
+.project-title__spec {
+  font-size: 88px;
+  white-space: nowrap;
+}
+
+.about-project-wrap {
+  margin-top: 24px;
+  width: 90svh;
+  /* width: 100%; */
+}
+
+.about-inner {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+}
+
+.inner-img {
+  width: 690px;
+  height: 450px;
+  border: 1px solid #1b1b1b;
+  border-radius: 10px;
+}

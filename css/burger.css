@@ -1,0 +1,119 @@
+/* Основні стилі */
+body.menu-open {
+  overflow: hidden; /* Блокування скролінгу */
+}
+
+.burger-menu {
+  position: relative;
+}
+
+/* Кнопка */
+.burger-button {
+  position: relative;
+  padding: 20px;
+  /* cursor: pointer; */
+  z-index: 99;
+  margin: 0 auto; /* Центрування блока кнопки */
+  pointer-events: all;
+}
+
+.burger-button span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 1.5px;
+  background-color: #fff;
+  border-radius: 2px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* .burger-button span:hover {
+
+} */
+
+.burger-button span:nth-child(1) {
+  transform: translate(-50%, calc(-50% - 2px));
+}
+
+.burger-button span:nth-child(2) {
+  transform: translate(-50%, calc(-50% + 6px));
+  /* transform: translate(-50%, -50%); */
+}
+
+/* .burger-button span:nth-child(3) {
+  transform: translate(-50%, calc(-50% + 6px));
+} */
+
+/* Стан відкриття */
+.burger-button.active span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger-button.active span:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* .burger-button.active span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+} */
+
+/* Меню */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 35%;
+  height: 100%;
+  background-color: #0a0a0a;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.6s ease-in-out;
+  z-index: 98;
+}
+
+/* .menu .logo {
+  position: relative;
+  top: 35px;
+  left: 145px;
+  width: 120px;
+} */
+
+.menu.open {
+  right: 0;
+  transition: right 0.6s ease-in-out;
+}
+
+.burger-nav {
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.burger-nav span {
+  margin-bottom: 48px;
+  font-family: FlexibleMenu;
+  font-size: 60px;
+  letter-spacing: 0.02em;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  padding-left: 48px;
+}
+
+.burger-nav span:hover {
+  /* text-decoration: underline; */
+  letter-spacing: 0.07em;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100%;
+  }
+
+  .burger-button {
+    padding: unset;
+  }
+}

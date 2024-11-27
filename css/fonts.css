@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: Flexible100;
+  src: url(/fonts/flex-100.otf);
+}
+
+@font-face {
+  font-family: FlexibleMenu;
+  src: url(/fonts/Flexible-H1000W200.woff2);
+}
+
+@font-face {
+  font-family: SupplyLight;
+  src: url(/fonts/Supply-Light.woff2);
+}
+
+@font-face {
+  font-family: SupplyRegular;
+  src: url(/fonts/Supply-Regular.woff2);
+}
+
+@font-face {
+  font-family: SupplyBold;
+  src: url(/fonts/Supply-Bold.woff2);
+}
